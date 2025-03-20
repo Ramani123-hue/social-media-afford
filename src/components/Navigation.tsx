@@ -23,32 +23,11 @@ import {
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { styled } from '@mui/material/styles';
 
-const StyledAppBar = styled(AppBar)<{ position?: 'fixed' | 'absolute' | 'sticky' | 'static' | 'relative' }>(({ theme }) => ({
+const StyledAppBar = styled(AppBar)(({ theme }) => ({
   background: 'rgba(255, 255, 255, 0.8)',
   backdropFilter: 'blur(10px)',
   boxShadow: 'none',
   borderBottom: `1px solid ${theme.palette.divider}`,
-}));
-
-const Logo = styled(Typography)<{ component?: React.ElementType; to?: string; variant?: string }>(({ theme }) => ({
-  color: theme.palette.primary.main,
-  textDecoration: 'none',
-  fontWeight: 700,
-  letterSpacing: '.3rem',
-  marginRight: theme.spacing(2),
-}));
-
-const NavButton = styled(Button)<{ component?: React.ElementType; to?: string; startIcon?: React.ReactNode }>(({ theme }) => ({
-  color: theme.palette.text.primary,
-  textTransform: 'none',
-  fontWeight: 500,
-  '&.active': {
-    color: theme.palette.primary.main,
-    backgroundColor: 'rgba(25, 118, 210, 0.08)',
-  },
-  '&:hover': {
-    backgroundColor: 'rgba(25, 118, 210, 0.12)',
-  },
 }));
 
 const Navigation = () => {
@@ -100,26 +79,54 @@ const Navigation = () => {
               <MenuIcon />
             </IconButton>
           )}
-          <Logo component={RouterLink} to="/" variant="h6">
+
+          {/* Updated Typography Component */}
+          <Typography
+            component={RouterLink}
+            to="/"
+            variant="h6"
+            sx={{
+              color: theme.palette.primary.main,
+              textDecoration: 'none',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              marginRight: theme.spacing(2),
+            }}
+          >
             Social Analytics
-          </Logo>
+          </Typography>
+
           {!isMobile && (
-            <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'flex-end' }}>
+            <Box sx={{ flexGrow: 1, gap:1, display: 'flex', justifyContent: 'flex-end' }}>
               {navItems.map((item) => (
-                <NavButton
+                <Button
                   key={item.text}
                   component={RouterLink}
                   to={item.path}
                   startIcon={item.icon}
                   className={location.pathname === item.path ? 'active' : ''}
+                  sx={{
+                    color: theme.palette.text.primary,
+                    textTransform: 'none',
+                    fontWeight: 500,
+                    '&.active': {
+                      color: theme.palette.primary.main,
+                      backgroundColor: 'rgba(25, 118, 210, 0.08)',
+                    },
+                    '&:hover': {
+                      backgroundColor: theme.palette.primary.main,
+                      color: 'white',
+                    },
+                  }}
                 >
                   {item.text}
-                </NavButton>
+                </Button>
               ))}
             </Box>
           )}
         </Toolbar>
       </StyledAppBar>
+
       <Drawer
         variant="temporary"
         anchor="left"
@@ -145,4 +152,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation; 
+export default Navigation;
