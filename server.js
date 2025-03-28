@@ -18,88 +18,143 @@ const users = [
   },
   {
     id: '2',
-    name: 'Jane Smith',
+    name: 'Jane Doe',
     email: 'jane@example.com',
     avatar: 'https://i.pravatar.cc/150?img=2',
     postCount: 12
   },
   {
     id: '3',
-    name: 'Mike Johnson',
+    name: 'Alice smith',
     email: 'mike@example.com',
     avatar: 'https://i.pravatar.cc/150?img=3',
     postCount: 8
   },
   {
     id: '4',
-    name: 'Alice Brown',
+    name: 'Bob johnson',
     email: 'alice@example.com',
     avatar: 'https://i.pravatar.cc/150?img=4',
     postCount: 20
   },
   {
     id: '5',
-    name: 'Bob Martin',
+    name: 'Charlie brown',
     email: 'bob@example.com',
     avatar: 'https://i.pravatar.cc/150?img=5',
     postCount: 10
   },
   {
     id: '6',
-    name: 'Charlie Davis',
+    name: 'Dayana white',
     email: 'charlie@example.com',
     avatar: 'https://i.pravatar.cc/150?img=6',
     postCount: 25
   },
   {
     id: '7',
-    name: 'David Clark',
+    name: 'Edward davis',
     email: 'david@example.com',
     avatar: 'https://i.pravatar.cc/150?img=7',
     postCount: 18
   },
   {
     id: '8',
-    name: 'Evelyn Harris',
+    name: 'fiyona miller',
     email: 'evelyn@example.com',
     avatar: 'https://i.pravatar.cc/150?img=8',
     postCount: 22
   },
   {
     id: '9',
-    name: 'Frank White',
+    name: 'George wilson',
     email: 'frank@example.com',
     avatar: 'https://i.pravatar.cc/150?img=9',
     postCount: 5
   },
   {
     id: '10',
-    name: 'Grace King',
+    name: 'Helen moore',
     email: 'grace@example.com',
     avatar: 'https://i.pravatar.cc/150?img=10',
     postCount: 14
   },
   {
     id: '11',
-    name: 'Hannah Lee',
+    name: 'Ivy taylor',
     email: 'hannah@example.com',
     avatar: 'https://i.pravatar.cc/150?img=11',
     postCount: 17
   },
   {
     id: '12',
-    name: 'Isaac Moore',
+    name: 'Jack anderson',
     email: 'isaac@example.com',
     avatar: 'https://i.pravatar.cc/150?img=12',
     postCount: 30
   },
   {
     id: '13',
-    name: 'Jack Wilson',
+    name: 'kathy thomas',
     email: 'jack@example.com',
     avatar: 'https://i.pravatar.cc/150?img=13',
     postCount: 28
   }
+  {
+    id: '14',
+    name: 'Liyam jackson',
+    email: 'jack@example.com',
+    avatar: 'https://i.pravatar.cc/150?img=13',
+    postCount: 28
+  }
+  
+  {
+    id: '15',
+    name: 'mona harris',
+    email: 'jack@example.com',
+    avatar: 'https://i.pravatar.cc/150?img=13',
+    postCount: 28
+  }
+  
+  {
+    id: '16',
+    name: 'nathan clark',
+    email: 'jack@example.com',
+    avatar: 'https://i.pravatar.cc/150?img=13',
+    postCount: 28
+  }
+  {
+    id: '17',
+    name: 'oliviya levis',
+    email: 'jack@example.com',
+    avatar: 'https://i.pravatar.cc/150?img=13',
+    postCount: 28
+  }
+  
+  {
+    id: '18',
+    name: 'paul walker',
+    email: 'jack@example.com',
+    avatar: 'https://i.pravatar.cc/150?img=13',
+    postCount: 28
+  }
+  {
+    id: '19',
+    name: 'quin scott',
+    email: 'jack@example.com',
+    avatar: 'https://i.pravatar.cc/150?img=13',
+    postCount: 28
+  }
+  
+  {
+    id: '20',
+    name: 'rachel young',
+    email: 'jack@example.com',
+    avatar: 'https://i.pravatar.cc/150?img=13',
+    postCount: 28
+  }
+  
+  
 ];
 
 
@@ -131,7 +186,7 @@ const posts = [
   {
     id: '2',
     userId: '2',
-    userName: 'Jane Smith',
+    userName: 'Jane doe',
     userAvatar: 'https://i.pravatar.cc/150?img=2',
     content: 'Working on a new project. Stay tuned!',
     image: 'https://picsum.photos/800/400?random=2',
@@ -149,7 +204,7 @@ const posts = [
   {
     id: '3',
     userId: '3',
-    userName: 'Mike Johnson',
+    userName: 'alice smith',
     userAvatar: 'https://i.pravatar.cc/150?img=3',
     content: 'Exploring new photography spots this weekend!',
     image: 'https://picsum.photos/800/400?random=3',
@@ -167,7 +222,7 @@ const posts = [
   {
     id: '4',
     userId: '4',
-    userName: 'Alice Brown',
+    userName: 'Bob jhonson',
     userAvatar: 'https://i.pravatar.cc/150?img=4',
     content: 'Just finished my painting. So proud of this one!',
     image: 'https://picsum.photos/800/400?random=4',
@@ -185,7 +240,7 @@ const posts = [
   {
     id: '5',
     userId: '5',
-    userName: 'Bob Martin',
+    userName: 'charlie brown',
     userAvatar: 'https://i.pravatar.cc/150?img=5',
     content: 'Learning React! Loving it so far! 🚀',
     image: 'https://picsum.photos/800/400?random=5',
@@ -203,7 +258,7 @@ const posts = [
   {
     id: '6',
     userId: '6',
-    userName: 'Charlie Davis',
+    userName: 'dayana white',
     userAvatar: 'https://i.pravatar.cc/150?img=6',
     content: 'Had a blast hiking this weekend! 🌄',
     image: 'https://picsum.photos/800/400?random=6',
@@ -221,7 +276,7 @@ const posts = [
   {
     id: '7',
     userId: '7',
-    userName: 'David Clark',
+    userName: 'edward davis',
     userAvatar: 'https://i.pravatar.cc/150?img=7',
     content: 'Started a new workout routine today! 💪',
     image: 'https://picsum.photos/800/400?random=7',
@@ -239,7 +294,7 @@ const posts = [
   {
     id: '8',
     userId: '8',
-    userName: 'Evelyn Harris',
+    userName: 'fiyona miller',
     userAvatar: 'https://i.pravatar.cc/150?img=8',
     content: 'Baking some delicious cookies today! 🍪',
     image: 'https://picsum.photos/800/400?random=8',
@@ -257,7 +312,7 @@ const posts = [
   {
     id: '9',
     userId: '9',
-    userName: 'Frank White',
+    userName: 'george wilson',
     userAvatar: 'https://i.pravatar.cc/150?img=9',
     content: 'Watching my favorite movie tonight! 🎬',
     image: 'https://picsum.photos/800/400?random=9',
@@ -275,7 +330,7 @@ const posts = [
   {
     id: '10',
     userId: '10',
-    userName: 'Grace King',
+    userName: 'helen moore',
     userAvatar: 'https://i.pravatar.cc/150?img=10',
     content: 'Starting my new job today! Wish me luck! 🙌',
     image: 'https://picsum.photos/800/400?random=10',
@@ -292,6 +347,186 @@ const posts = [
         id: '12',
         userId: '2',
         content: 'Best of luck! 🍀',
+        timestamp: new Date().toISOString()
+      }
+    ]
+  }
+  {
+    id: '11',
+    userId: '11',
+    userName: 'ivy taylor',
+    userAvatar: 'https://i.pravatar.cc/150?img=7',
+    content: 'Started a new workout routine today! 💪',
+    image: 'https://picsum.photos/800/400?random=7',
+    timestamp: new Date().toISOString(),
+    commentCount: 1,
+    comments: [
+      {
+        id: '8',
+        userId: '3',
+        content: 'Good luck! Stay consistent!',
+        timestamp: new Date().toISOString()
+      }
+    ]
+  }
+  {
+    id: '12',
+    userId: '12',
+    userName: 'Jack anderson',
+    userAvatar: 'https://i.pravatar.cc/150?img=7',
+    content: 'Started a new workout routine today! 💪',
+    image: 'https://picsum.photos/800/400?random=7',
+    timestamp: new Date().toISOString(),
+    commentCount: 1,
+    comments: [
+      {
+        id: '8',
+        userId: '3',
+        content: 'Good luck! Stay consistent!',
+        timestamp: new Date().toISOString()
+      }
+    ]
+  }
+  {
+    id: '13',
+    userId: '13',
+    userName: 'kathy thomas',
+    userAvatar: 'https://i.pravatar.cc/150?img=7',
+    content: 'Started a new workout routine today! 💪',
+    image: 'https://picsum.photos/800/400?random=7',
+    timestamp: new Date().toISOString(),
+    commentCount: 1,
+    comments: [
+      {
+        id: '8',
+        userId: '3',
+        content: 'Good luck! Stay consistent!',
+        timestamp: new Date().toISOString()
+      }
+    ]
+  }
+  {
+    id: '14',
+    userId: '14',
+    userName: 'Liyam jockson',
+    userAvatar: 'https://i.pravatar.cc/150?img=7',
+    content: 'Started a new workout routine today! 💪',
+    image: 'https://picsum.photos/800/400?random=7',
+    timestamp: new Date().toISOString(),
+    commentCount: 1,
+    comments: [
+      {
+        id: '8',
+        userId: '3',
+        content: 'Good luck! Stay consistent!',
+        timestamp: new Date().toISOString()
+      }
+    ]
+  }
+  {
+    id: '15',
+    userId: '15',
+    userName: 'mona harris',
+    userAvatar: 'https://i.pravatar.cc/150?img=7',
+    content: 'Started a new workout routine today! 💪',
+    image: 'https://picsum.photos/800/400?random=7',
+    timestamp: new Date().toISOString(),
+    commentCount: 1,
+    comments: [
+      {
+        id: '8',
+        userId: '3',
+        content: 'Good luck! Stay consistent!',
+        timestamp: new Date().toISOString()
+      }
+    ]
+  }
+  {
+    id: '16',
+    userId: '16',
+    userName: 'nathan clark',
+    userAvatar: 'https://i.pravatar.cc/150?img=7',
+    content: 'Started a new workout routine today! 💪',
+    image: 'https://picsum.photos/800/400?random=7',
+    timestamp: new Date().toISOString(),
+    commentCount: 1,
+    comments: [
+      {
+        id: '8',
+        userId: '3',
+        content: 'Good luck! Stay consistent!',
+        timestamp: new Date().toISOString()
+      }
+    ]
+  }
+  {
+    id: '17',
+    userId: '17',
+    userName: 'oliviya levis',
+    userAvatar: 'https://i.pravatar.cc/150?img=7',
+    content: 'Started a new workout routine today! 💪',
+    image: 'https://picsum.photos/800/400?random=7',
+    timestamp: new Date().toISOString(),
+    commentCount: 1,
+    comments: [
+      {
+        id: '8',
+        userId: '3',
+        content: 'Good luck! Stay consistent!',
+        timestamp: new Date().toISOString()
+      }
+    ]
+  }
+  {
+    id: '18',
+    userId: '18',
+    userName: 'paul walker',
+    userAvatar: 'https://i.pravatar.cc/150?img=7',
+    content: 'Started a new workout routine today! 💪',
+    image: 'https://picsum.photos/800/400?random=7',
+    timestamp: new Date().toISOString(),
+    commentCount: 1,
+    comments: [
+      {
+        id: '8',
+        userId: '3',
+        content: 'Good luck! Stay consistent!',
+        timestamp: new Date().toISOString()
+      }
+    ]
+  }
+  {
+    id: '19',
+    userId: '19',
+    userName: 'quin scot',
+    userAvatar: 'https://i.pravatar.cc/150?img=7',
+    content: 'Started a new workout routine today! 💪',
+    image: 'https://picsum.photos/800/400?random=7',
+    timestamp: new Date().toISOString(),
+    commentCount: 1,
+    comments: [
+      {
+        id: '8',
+        userId: '3',
+        content: 'Good luck! Stay consistent!',
+        timestamp: new Date().toISOString()
+      }
+    ]
+  }
+  {
+    id: '20',
+    userId: '20',
+    userName: 'rachel young',
+    userAvatar: 'https://i.pravatar.cc/150?img=7',
+    content: 'Started a new workout routine today! 💪',
+    image: 'https://picsum.photos/800/400?random=7',
+    timestamp: new Date().toISOString(),
+    commentCount: 1,
+    comments: [
+      {
+        id: '8',
+        userId: '3',
+        content: 'Good luck! Stay consistent!',
         timestamp: new Date().toISOString()
       }
     ]
